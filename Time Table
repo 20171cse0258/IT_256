@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>TIME TABLE</title>
+</head>
+<body>
+<button>
+<table border=1 bordercolor="pink">
+<tr>
+<th colspan=9>Time Table</th>
+</tr>
+<tr bgcolor="yellow">
+<td>Days</td>
+<td>1</td>
+<td>2</td>
+<td rowspan=6>BREAK</td>
+<td>3</td>
+<td rowspan=4>LUNCH</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td bgcolor="grey">Monday</td>
+<td colspan="2">NP-LAB</td>
+<td>ML</td>
+<td>DE</td>
+<td>GTC</td>
+<td bgcolor="red">CCH</td>
+</tr>
+<tr>
+<td bgcolor="grey">Tuesday</td>
+<td>DE</td>
+<td>OOAD</td>
+<td>GTC</td>
+<td>IT</td>
+<td colspan=2>IT-LAB</td>
+
+</tr>
+<tr>
+<td bgcolor="grey">Wednesday</td>
+<td bgcolor="red"colspan=2>AT-LAB</td>
+<td>ML</td>
+<td>DE</td>
+<td colspan=2>NP-LAB</td>
+
+</tr>
+<tr>
+<td bgcolor="grey">Thursday</td>
+<td>OOAD</td>
+<td>GTC</td>
+<td bgcolor="red"colspan=2>AT</td>
+<td bgcolor="yellow">LUNCH</td>
+<td colspan=2>IT-LAB</td>
+</tr>
+<tr>
+<td bgcolor="grey">Friday</td>
+<td>GTC</td>
+<td>OOAD</td>
+<td>ML</td>
+<td bgcolor="yellow">LUNCH</td>
+<td bgcolor="red" colspan=2>SST</td>
+<td bgcolor="red">LIB</td>
+</tr>
+</table>
+</button>
+</body>
+</html>
