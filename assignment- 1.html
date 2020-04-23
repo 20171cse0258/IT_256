@@ -1,0 +1,201 @@
+<html>
+<head>
+<title> JavaScript and HTML Forms</title>
+<style>
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+.button {
+  background-color: white;
+  border: 1.5px solid black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: red;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 12px;
+}
+div{
+background-color:blue;
+}
+.que{
+border-left: 6px solid red;
+  background-color: lightgrey;
+}
+.border{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 80px;
+  width:400px;
+  margin: auto;
+  border: 2px solid Black;
+  border-radius: 5px;
+}
+body{  
+background: rgba(0,0,255, 0.7);
+}
+</style>
+</head>
+<body>
+<b>
+<p class="que"> 1)Write a JavaScript code to print your name 3 times on browser with button onclick event performed by user.(use while or for loop ) ?</p>
+
+<p>A)&emsp;<button class="button button5" onclick="myFunction()" > Answer</button></p>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text = "";
+  var i = 1;
+  while (i < 4) {
+    text +=i+ ".Jagga Rangavinay Teja Royal<br> ";
+    i++;
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+
+<p class="que">2)Write a simple JavaScript; to read and print your name and USN using prompt dialog box ?</p>
+
+<p>A)&emsp;<button class="button button5" onclick="myFunction1()">Answer</button></p>
+<p id="demo1"></p>
+
+<script>
+function myFunction1() {
+  var person = prompt("Please enter your name :", "");
+  var USN = parseInt(prompt("Please enter USN number :", ""));
+  alert("Hello " + person+". Your USN number is :"+USN +" .")
+  if (person != null) {
+    document.getElementById("demo1").innerHTML =
+    "Hello " + person + ". Your USN number is :"+USN;
+  }
+}
+</script>
+
+
+
+
+<p class="que">3)Write a JavaScript code to read two numbers from prompt window and print the sum,subtraction,multiplication, division on the browser ?</p>
+
+<p>A)&emsp;<button class="button button5" onclick="myFunction2()">Answer</button></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+ <script>
+function myFunction2() {
+        var a = prompt("Enter first number","");
+        var b = prompt("Enter second number","");
+        a=Number(a);
+        b=Number(b);
+        var sum=a+b;
+        var sub=a-b;
+        var mul=a*b;
+        var div=a/b;
+if (a != null) {
+if (b != null){
+    document.getElementById("demo2").innerHTML =
+    "Sum of two numbers is : " + sum  ;
+document.getElementById("demo3").innerHTML =
+    "Substraction of two numbers is : " + sub  ;
+document.getElementById("demo4").innerHTML =
+    "Multiplication of two numbers is : " + mul  ;
+document.getElementById("demo5").innerHTML =
+    "Divison of two numbers is : " + div ;
+  }}}
+
+ </script>
+
+
+
+<p class="que">4) Write a JavaScript code to confirm; the message; “Are you sure you want to make the changes” using confirm boxes along with option ok or cancel suitable messages should be displayed “yes changes applicable” and; “changes not applicable”.</p>
+
+
+<p>A)&emsp;<button class="button button5" onclick="myFunction3()">Answer</button></p>
+<p id="demo6"></p>
+<script>
+function myFunction3() {
+var txt;
+  var r = confirm("Are you sure you want to make the changes");
+  if (r == true) {
+    txt = "yes changes applicable";
+  } else {
+    txt = "changes not applicable";
+  }
+  document.getElementById("demo6").innerHTML = txt;}
+</script>
+
+
+
+<p class="que">5) Design a form with at least 3 textboxs,2 dropdown menus, checkbox, radio button, text area, submit button and reset button?</p>
+<div class="border">
+<form>
+<h1> Registration Form</h1>
+<br/>
+<form>
+    <label for="fname">First Name :</label> 
+    <input type="text" placeholder="Enter First Name" id="fname" >
+<br/>
+<br/>
+    <label for="lname">Last Name :</label>
+    <input type="text" placeholder="Enter Last Name" id="lname" >
+<br/>
+<br/>  <label for="uname"> Username &nbsp;: </label>
+    <input type="text"  placeholder="Enter Username" id="uname" >
+<br/>
+<br/>
+    <label for="pwd"> Password &nbsp&nbsp;:</label>
+    <input type="password"  placeholder="Enter Password" id="pwd" >
+<br/>
+<br/>
+ <select>
+        <option selected disabled>--Select City</option>
+        <option>Bangalore</option>
+        <option>Hyderabad</option>
+        <option>Mumbai</option>
+        <option>Kolkata</option>
+    </select>
+ <select>
+        <option selected disabled>--Select College</option>
+        <option>Presidency University</option>
+        <option>Presidency College</option>
+        <option>Ramaiah College</option>
+        <option>Christ University</option>
+    </select>
+<br/>
+<br/>
+<label> <input type="checkbox"> Professor</label>
+<label> <input type="checkbox"> Student</label>
+<label> <input type="checkbox"> Others</label>
+<br/>
+<br/>
+<input type="radio" name="gender" id="male"> 
+    <label for="m">Male</label>
+     	
+    <input type="radio" name="gender" id="female"> 
+    <label for="f">Female</label>
+  <br/>
+<br/>  
+<textarea rows="6" cols="30"></textarea>
+  <br/>
+<br/>
+&ensp;   <input type="reset">&ensp;
+<input type="submit">
+<br/>
+</form>
+</div>
+</b>
+</body>
+</html>

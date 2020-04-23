@@ -1,0 +1,211 @@
+<html>
+<head>
+<title>Presidency University Job Form</title>
+ <script type="text/javascript" src="vinay.js"></script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 20%;
+}
+
+td, th {
+  border: 1.2px solid black;
+  text-align: left;
+  padding: 2px;
+}
+
+tr:nth-child(1) {
+  background-color: 127780;
+}
+
+div{
+background-color:0F999E;
+
+}
+
+.border{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 80px;
+ width:400px;
+  margin: auto;
+  border: 2px solid Black;
+  border-radius: 5px;
+}
+
+.border1{
+background-color:127780;
+  width:250px;
+  
+  border: 2px solid Black;
+  border-radius: 5px;
+}
+
+.border3{
+background-color:127780;
+  width:250px;
+  
+  border: 2px solid Black;
+  border-radius: 5px;
+}
+
+
+.border2{
+  width:300px;
+  
+  border: 2px solid Black;
+  border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+<b>
+<div class="border">
+
+<form action="#" name="royal" onSubmit="return(vinay());">
+<h1 >&emsp;&emsp;&emsp;Job Form</h1>
+<br/>
+<br/>
+<label for="fname">First Name :</label> 
+    <input type="text" placeholder="Enter First Name" id="fname" required >
+<br/>
+<br/>
+<label for="email"> &emsp;Email Id    :</label>
+<input type="email" id="email" placeholder="Enter Email id .."  name="email" required><br/>
+<br/>
+<label for="age"> &emsp;&emsp;&emsp;Age    :</label>
+<input type="number" name="age" placeholder="18 -100"value="" min=18 max=100 required>
+<br/>
+<br/>
+<div class="border1">
+<input type="radio" name="gender" id="male" required> 
+    <label for="m">Male</label>
+     	
+    <input type="radio" name="gender" id="female" required> 
+    <label for="f">Female</label>
+ <input type="radio" name="gender" id="Others" required> 
+    <label for="f">Others</label>
+</div> 
+ <br/>
+<label for="phone">&ensp;Phone No :</label>
+<input type="tel" id="phone" placeholder="Enter Phone Number" name="phone" pattern="[0-9]{10}" required>
+  <br/>
+<br/> 
+<label for="address">&emsp;Address :</label>
+<textarea rows="1" cols="25" placeholder="Enter the address here" required></textarea>
+  <br/>
+<br/> 
+  <label for="img">&emsp;&ensp;Upload image:</label>
+  <input type="file" id="img" name="img" accept="image/*" required><br/> <br/> 
+  <label for="img">Upload Signature:</label>
+  <input type="file" id="img" name="img" accept="image/*" required><br/> <br/> 
+  <label for="img">&ensp;&nbsp;Upload Resume:</label>
+  <input type="file" id="img" name="img" accept="file_extension" required>
+  <br/>
+<br/> 
+<table>
+
+  <tr>
+    <th>Qualifications</th>
+    <th>Marks</th>
+    <th>Percentage</th>
+  </tr>
+  <tr>
+    <td><b>B-Tech</b></td>
+    <td><input type="number" placeholder="Enter Marks" min="0" max="1000" step="1" required></td>
+    <td><input type="number"  min="0" max="100" step="1"  placeholder="%"required></td>
+  </tr>
+  <tr>
+    <td><b>PUC</b></td>
+    <td><input type="number" placeholder="Enter Marks" min="0" max="1000" step="1" required></td>
+    <td><input type="number" placeholder="%" min="0" max="100" step="1" required></td>
+  </tr>
+  <tr>
+    <td><b>10th class</b></td>
+    <td><input type="number" placeholder="Enter Marks" min="0" max="1000" step="1" required></td>
+    <td><input type="number" placeholder="%" min="0" max="100" step="1" required></td>
+  </tr>
+</table>
+  <br/>
+
+<label for="eng">Specialization :&ensp;</label>
+<select name="eng">
+<option value="" selected>select branch..</option>
+
+  <option value="CSE">CSE</option>
+
+  <option value="ECE">ECE</option>
+
+  <option value="EEE">EEE</option>
+
+  <option value="MEC">MECHANICAL</option>
+<option value="CIV"> CIVIL</option>
+  </select>
+
+
+ <br/>
+ <br/>
+
+ <label for="yop">Year of Passing :</label>
+<input type='date' name='yop' required >
+ <br/>
+ <br/>
+<label for="dob">Date Of Birth :&ensp;</label>
+<input type='date' id="dob" placeholder="Enter DOB" name="dob" required>
+
+
+  <br/>
+<br/>
+<label for="techs">Technical Skills :</label> 
+<div class="border3">
+<input type="checkbox" name='tech1' id='techs' value="Python">Python &ensp;
+
+      <input type="checkbox" name='tech2' id='techs' value="C">C 
+
+      <input type="checkbox" name='tech3' id='techs' value="C++">C++ &nbsp;
+
+      <input type="checkbox" name='tech4' id='techs' value="DBMS">DBMS 
+
+<input type="checkbox" name='tech5' id='techs' value="CCNA">CCNA &nbsp;&ensp;
+<input type="checkbox" name='tech6' id='techs' value="TESTING">TESTING 
+<input type="checkbox" name='tech7' id='techs' value="Java">Java
+</div>
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&ensp;   <input type="reset">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<input type="submit" >
+</form>
+</div>
+</b>
+</body>
+</html>
